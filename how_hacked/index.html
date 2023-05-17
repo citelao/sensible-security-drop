@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-48W26RR6RV"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-48W26RR6RV');
+    </script>
+
+    <title>
+      How can I be hacked?
+       &#x2022; 
+      Sensible Security
+      
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:400,400i,700,700i" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/css/style.css?1684292998166623000">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="How can I be hacked?" />
+<meta name="author" content="Ben Stolovitz" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="If you’re going to get hacked, how will it happen? Learn about the VERIS schema, and how you can learn from it to make sensible security decisions." />
+<meta property="og:description" content="If you’re going to get hacked, how will it happen? Learn about the VERIS schema, and how you can learn from it to make sensible security decisions." />
+<link rel="canonical" href="https://security.stolovitz.com/how_hacked/" />
+<meta property="og:url" content="https://security.stolovitz.com/how_hacked/" />
+<meta property="og:site_name" content="Sensible Security" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-11-24T07:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="How can I be hacked?" />
+<script type="application/ld+json">
+{"headline":"How can I be hacked?","dateModified":"2023-04-25T01:12:34-04:00","datePublished":"2018-11-24T07:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://security.stolovitz.com/how_hacked/"},"url":"https://security.stolovitz.com/how_hacked/","author":{"@type":"Person","name":"Ben Stolovitz"},"@type":"BlogPosting","description":"If you’re going to get hacked, how will it happen? Learn about the VERIS schema, and how you can learn from it to make sensible security decisions.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+  <body class="page">
+    <header>
+	<div class="content">
+		<em class="logo">
+			
+				<a href="/">
+					<!-- TODO blank alt -->
+					<svg
+						version="1.1"
+						height="18" 
+						width="20"
+						baseProfile="full"
+						xmlns="http://www.w3.org/2000/svg">
+							<polygon points="0,8 10,0 20,8" fill="currentColor" />
+							<polygon points="2,8 2,18 8,18 8,11 12,11 12,18 18,18 18,8" fill="currentColor" />
+					</svg> 
+					Sensible Security
+				</a>
+			
+		</em>
+		<button id="menu_button" role="switch" aria-checked="false" class="menu_button">
+			Menu
+		</button>
+		<nav id="main_nav" class="menu_list">
+  <ul>
+    
+    
+      <li>
+        
+          <a href="/intro/">
+        
+          
+            Introduction
+          
+        
+          </a>
+        
+        </li>
+    
+      <li>
+        
+          <a href="/im_different/">
+        
+          
+            This guide is different
+          
+        
+          </a>
+        
+        </li>
+    
+      <li>
+        
+          <a href="/security/">
+        
+          
+            What is security?
+          
+        
+          </a>
+        
+        </li>
+    
+      <li>
+        
+          <a href="/hackers/">
+        
+          
+            Will I even be hacked?
+          
+        
+          </a>
+        
+        </li>
+    
+      <li>
+        
+          <span class="current">
+        
+          
+            How can I be hacked?
+          
+        
+          </span>
+        
+        </li>
+    
+      <li>
+        
+          <a href="/coffee/">
+        
+          
+            Coffee shop wi-fi
+          
+        
+          </a>
+        
+        </li>
+    
+      <li>
+        
+          <a href="/conclusion/">
+        
+          
+            Conclusion
+          
+        
+          </a>
+        
+        </li>
+    
+      <li>
+        
+          <a href="/references/">
+        
+          
+            References
+          
+        
+          </a>
+        
+        </li>
+    
+  </ul>
+  <h2>Advice to take</h2>
+  <ul>
+    
+    
+      <li>
+        
+          <a href="/overall/">
+        
+          
+            How to stay safe
+          
+        
+          </a>
+        
+        </li>
+    
+      <li>
+        
+          <a href="/passwords/">
+        
+          
+            Passwords & TFA
+          
+        
+          </a>
+        
+        </li>
+    
+      <li>
+        
+          <a href="/antivirus/">
+        
+          
+            Anti-virus software
+          
+        
+          </a>
+        
+        </li>
+    
+      <li>
+        
+          <a href="/backups/">
+        
+          
+            Backups
+          
+        
+          </a>
+        
+        </li>
+    
+      <li>
+        
+          <a href="/vpn/">
+        
+          
+            VPNs
+          
+        
+          </a>
+        
+        </li>
+    
+  </ul>
+  <h2>Sidequests</h2>
+  <ul>
+    
+    
+    <li>
+      
+        <a href="/help/">
+      
+        
+          I'm under attack now
+        
+      
+        </a>
+      
+      </li>
+  
+    <li>
+      
+        <a href="/https/">
+      
+        
+          What is HTTPS?
+        
+      
+        </a>
+      
+      </li>
+  
+    <li>
+      
+        <a href="/better_passwords/">
+      
+        
+          Better passwords
+        
+      
+        </a>
+      
+      </li>
+  
+  </ul>
+</nav>
+	</div>
+</header>
+<article>
+	<h1>How can I be hacked?</h1>
+	<aside class="sidebar">
+		<ul class="no_bullets">
+			<li>
+				<strong>Reading time</strong>: 
+
+
+
+  7mins
+
+			</li>
+			
+				<li>
+					<strong>Published</strong>: Nov 24th, 2018
+				</li>
+			
+			<li>
+				<strong>Modified</strong>: Apr 25th, 2023
+			</li>
+		</ul>
+	</aside>
+	<p>Yes, there are hackers who want to steal your cash. In <a href="/hackers/">the last section</a>, it became clear that hackers target anyone who can make them money.</p>
+
+<p>But what will a cyber-criminal actually do to compromise your <a href="/security/">security</a>?</p>
+
+<p>Unfortunately, the quick answer is, “we don’t really know.”</p>
+
+<figure>
+    <img src="/img/Shrug.png" alt="A person shrugs their shoulders as two criminals, standing directly behind the person, make off with paperwork and money." />
+
+    <figcaption>
+        There's no good overall list of the biggest threats
+    </figcaption>
+</figure>
+
+<p>There is plenty of cybersecurity research out there, and there are plenty of ways to <a href="/overall/">stay safe</a>, but there is no good overall list of consumer cybersecurity threats. Without a well-tested list, we have no way to rank the most likely threats.</p>
+
+<p>Instead, the best we can do is analyze the threats we know about—and hope we didn’t miss any.</p>
+
+<h2 id="our-best-list-the-veris-schema">Our best list: the VERIS schema</h2>
+
+<p>The best starting point we have comes from the <a href="http://veriscommunity.net">VERIS schema</a>⁠<span tabindex="0" class="citeblock"><a class="citation" href="/references/#noauthor_actions_nodate">(<i>Actions</i>, n.d.)</a></span>⁠<!-- (also the A4 threat model) http://veriscommunity.net/a4grid.html -->, developed at Verizon for their annual Data Breach Investigations Report, mentioned in the last section.</p>
+
+<p>The VERIS schema breaks up attacks into 7 different categories, called “<a href="http://veriscommunity.net/actions.html">actions</a>.” Each of these is actually pretty understandable:</p>
+
+<ul>
+  <li><strong>Hacking</strong>: things like using stolen passwords, exploiting vulnerabilities, and everything you’ve seen on NCIS.</li>
+  <li><strong>Malware</strong>: things like computer viruses.</li>
+  <li><strong>Social</strong>: phishing and other attacks involving manipulation.</li>
+  <li><strong>Misuse</strong>: things like admins abusing access to emails and logs.</li>
+  <li><strong>Physical</strong>: things like stealing a laptop.</li>
+  <li><strong>Error</strong>: things like emailing the wrong person or accidentally leaking information.</li>
+  <li><strong>Environmental</strong>: things like storms, pathogens, power outages.</li>
+</ul>
+
+<aside class="sidenote">
+  <p>It should also be straightforward to see how these actions affect your security. For example, you could imagine:</p>
+
+  <ul>
+    <li>Having a password <strong>hacked</strong>.</li>
+    <li>Getting a virus or other type of <strong>malware</strong>.</li>
+    <li>Being a victim of a <strong>social</strong> attack like fraud or phishing.</li>
+    <li>Having your kid accidentally <strong>misuse</strong> your iPhone to buy apps.</li>
+    <li>Having your laptop <strong>physically</strong> stolen.</li>
+    <li>Accidentally (in <strong>error</strong>) emailing your boss the photo you meant to send to your spouse.</li>
+    <li>Losing your entire backup hard drive in an <strong>environmental</strong> disaster.</li>
+  </ul>
+</aside>
+
+<p>For corporate threats, at least, this is a fantastic, battle-tested list. The DBIR analyzes over 40,000 security incidents annually, and 94% of attacks fall into one of these categories⁠<span tabindex="0" class="citeblock"><a class="citation" href="/references/#verizon_enterprise_2018_2018">(Verizon Enterprise, 2018, p. 22)</a></span>⁠.</p>
+
+<p>If this list were tested on consumers, rather than just corporations, it would be exactly what we’re looking for.</p>
+
+<h2 id="the-best-list-is-not-good-enough">The best list is not good enough</h2>
+
+<p>Unfortunately, no one has applied this list to consumers, or even tested the list on them.</p>
+
+<p>Beyond that, it’s pretty easy to identify some problems applying this list to everyday folks:</p>
+
+<ul>
+  <li>The list masks a big problem—that <strong>hackers are far more likely to get your password by hacking a corporation</strong>, rather than hacking you.<!--  The vast majority of the time, if your data leaks it's because someone hacked a *company* that had your data (citation kinda needed (Experian breach?)). The VERIS schema still applies, but the attackers targeted the company, not you. It's notoriously hard to write secure code and keep secrets safe (TODO stats about encryption). Facebook, Dropbox, Adobe, Experian, the US Office of Personnel Management, and more---company after company and government after govenrment (https://haveibeenpwned.com/PwnedWebsites)---have all lost unencrypted (or poorly encrypted) data to hackers. Passwords, social security numbers, and even *fingerprints* have all been stolen and live on the Internet freely. I share the blame---I released a (now defunct) website with insecure password storage while I was in middle school. Sorry! --></li>
+  <li>This list categorizes a lot of problems (like accidentally making a Facebook album public) as “error,” which masks their true cause: <strong>lots of software makes it hard to stay safe</strong>⁠<span tabindex="0" class="citeblock"><a class="citation" href="/references/#norman_design_2002">(Norman, 2002, p. viii)</a></span>⁠.</li>
+  <li><strong>Almost no research analyzes the consumer impact of the last 4 actions in the list</strong> (misuse, physical, error, and environmental).</li>
+</ul>
+
+<p>The VERIS attack types simply aren’t a complete answer here. Until someone takes a systematic look at the problems everyday users face, we won’t have that complete answer.</p>
+
+<h2 id="you-dont-need-a-complete-list-to-be-smart">You don’t need a complete list to be smart</h2>
+
+<p>But you don’t need a complete list to start making smart decisions. You just start with the data you have.</p>
+
+<p>Consider your friend who never buckles up when they drive (we all have one). “It’s not safe!” you say.</p>
+
+<p>“Ah,” they reply, with an infuriating grin, “but <strong>I’ve never had an accident</strong>.”</p>
+
+<p>Perhaps they’re right: after all, they haven’t been hurt yet, and plenty of folks get hurt in car accidents even while wearing their seatbelts. By a similar argument, <strong>why don’t you wear a bulletproof vest</strong> when you walk to work? Doesn’t it make you “safer”?</p>
+
+<p>For me, the answer is immediate and visceral. <em>Getting shot</em> is not likely. <em>Getting in a car accident</em> is. We <em>have</em> the data for that. <strong>Seatbelts and bulletproof vests make you “safer” in different scenarios</strong>. If my friend wore the vest but not a seatbelt, I’d want to slap them.</p>
+
+<p>But in some places, those likelihoods are flipped (like a war zone). <strong>And in those cases, I’d rather wear the vest than buckle up.</strong></p>
+
+<h2 id="no-list-can-ever-be-complete">No list can ever be complete</h2>
+
+<p>It’s worth noting that no list of threats can ever be complete. This comes from a deeper philosophical issue, the problem of induction⁠<span tabindex="0" class="citeblock"><a class="citation" href="/references/#herley_science_2018">(Herley &amp; van Oorschot, 2018, p. 2; Herley, 2016, p. 2)</a></span>⁠, but think about it: each list comes with its own assumptions—of what’s important to you, of what an “attack” means, of what’s possible. Even if we analyzed every bit of data we have, <strong>we’d still be limited by the attacks we know about or can imagine</strong>.</p>
+
+<p>Without even a battle-tested overview of threats, no matter how much energy you spend protecting yourself, <strong>you can never be sure that you protected against the most important threats</strong>. You might be wearing a seatbelt when you should be wearing a bulletproof vest.</p>
+
+<h2 id="ranking-threats-in-the-absence-of-data">Ranking threats in the absence of data</h2>
+
+<p>In the absence of data, remember the takeaway from <a href="/hackers/">the last section</a>: unless they are targeting you specifically (in which case you should <a href="/help/">get help</a>), <strong>hackers need money</strong>.</p>
+
+<p>You can use that knowledge to roughly rank the attacks you know about, like those in the VERIS schema (even with its caveats). You might not know precisely how these attacks work or what these attacks mean specifically, but <strong>you should have an intuition for what can pay a hacker’s rent and what can’t</strong>.</p>
+
+<p>Ask yourself: how many passwords could a hacker get by <strong>sniffing the wi-fi</strong> at Starbucks? Or by physically <strong>watching over people’s shoulders</strong> there?</p>
+
+<p>And how many more passwords could they get if they used that time to <strong>send phishing emails instead</strong>?</p>
+
+<p>You can also combine that idea with other stuff you know—for example, multiple Microsoft reports note that accounts with 2-factor authentication are <strong>more than 99.9% safer</strong>⁠<span tabindex="0" class="citeblock"><a class="citation" href="/references/#goyal_your_2019">(Goyal, 2019; Weinert, 2019; Weinert, 2019)</a></span>⁠ than accounts with just a password (see <a href="/passwords">Passwords &amp; TFA</a>). But you might have been able to guess that anyway (is it easier for a hacker to impersonate your phone number or to guess your password, <code class="language-plaintext highlighter-rouge">password1</code>?).</p>
+
+<p>This is the key: you are already well-equipped to understand how easy or difficult many of these attacks are. More knowledge can only help, but <strong>you should already be ready to start</strong>.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Still, you should be unhappy with these answers.</p>
+
+<p>Real answers would give you numbers and put things in perspective. They would point out all of the important things, and they would feel complete. They’d help you feel like a doctor, looking at efficacy and rates of side effects to choose the right treatment plan. They would let you rank threats, and they’d help you focus on the biggest ones.</p>
+
+<p>We don’t have those answers.</p>
+
+<p>Corporations do: they have the VERIS schema attack types. The DBIR gives them tips, like “malware is much more common than physical attacks.” But these attack types aren’t a perfect fit for everyday folks.</p>
+
+<p>So make do.</p>
+
+<ul>
+  <li>Use your knowledge of what hackers want to <strong>rank threats</strong>.</li>
+  <li>Use the VERIS schema attack types to (at least) <strong>get a sense of what’s possible</strong>.</li>
+  <li>Realize that <strong>there might be more important threats &amp; defenses</strong> just out of sight, ready to be discovered.</li>
+</ul>
+
+<p>And demand a better answer to the question: “how will I be hacked?”</p>
+
+<!-- TODO link to the analysis of hacking, malware, and phishing -->
+
+	<nav class="page_nav">
+		
+		 
+		
+			<a class="prev" href="/hackers/">&laquo; Will I be hacked?</a> 
+		 
+		 
+		
+			<a class="next" href="/coffee/">Is it safe to use coffee-shop wi-fi? &raquo;</a> 
+		 
+	</nav>
+	<aside class="alert info">
+		<strong>Loved this? Hated it?</strong> Leave feedback with this <a href="https://docs.google.com/forms/d/e/1FAIpQLScrx6IoWIdZ3UzqNVpsrQRdiyXhTgQ6yeXGOf5MQE-SLNzZlw/viewform?usp=sf_link">4 question survey</a>
+	</aside>
+</article>
+<footer>
+  <div class="content">
+    <section>
+      <h2>Warning</h2>
+      <p>This content is targeted at most Internet users—to access your bank, online shopping, and Facebook.</p>
+      <p>If you fear censorship or your life may be at risk if you are hacked, it is reasonable to take other precautions.</p>
+      <p class="legalese">
+        Also, this content is provided “as is”, without warranty of any kind,
+        express or implied, including but not limited to the warranties of
+        merchantability, fitness for a particular purpose and noninfringement.
+        In no event shall the authors or copyright holders be liable for any
+        claim, damages or other liability, whether in an action of contract,
+        tort or otherwise, arising from, out of or in connection with this
+        content or the use or other dealings in this content.
+      </p>
+    </section>
+    <section>
+      <h2>Content</h2>
+      <p>This site is by <a href="https://ben.stolovitz.com/">Ben Stolovitz</a>. Its content is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>. Its code is licensed under <a href="https://choosealicense.com/licenses/agpl-3.0/">GNU AGPLv3</a>.</p>
+      <p>Built code is available <a href="https://github.com/citelao/sensible-security-drop">on GitHub</a>.</p>
+    </section>
+  </div>
+</footer>
+
+    <script async src="/js/main.js"></script>
+  </body>
+</html>

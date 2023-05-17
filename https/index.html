@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-48W26RR6RV"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-48W26RR6RV');
+    </script>
+
+    <title>
+      What is HTTPS?
+       &#x2022; 
+      Sensible Security
+      
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:400,400i,700,700i" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/css/style.css?1684292998166623000">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="What is HTTPS?" />
+<meta name="author" content="Ben Stolovitz" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="HTTPS secures the most dangerous part of your Internet traffic. How?" />
+<meta property="og:description" content="HTTPS secures the most dangerous part of your Internet traffic. How?" />
+<link rel="canonical" href="https://security.stolovitz.com/https/" />
+<meta property="og:url" content="https://security.stolovitz.com/https/" />
+<meta property="og:site_name" content="Sensible Security" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-11-24T07:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="What is HTTPS?" />
+<script type="application/ld+json">
+{"headline":"What is HTTPS?","dateModified":"2023-04-24T02:49:34-04:00","datePublished":"2018-11-24T07:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://security.stolovitz.com/https/"},"url":"https://security.stolovitz.com/https/","author":{"@type":"Person","name":"Ben Stolovitz"},"@type":"BlogPosting","description":"HTTPS secures the most dangerous part of your Internet traffic. How?","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+  <body class="page">
+    <header>
+	<div class="content">
+		<em class="logo">
+			
+				<a href="/">
+					<!-- TODO blank alt -->
+					<svg
+						version="1.1"
+						height="18" 
+						width="20"
+						baseProfile="full"
+						xmlns="http://www.w3.org/2000/svg">
+							<polygon points="0,8 10,0 20,8" fill="currentColor" />
+							<polygon points="2,8 2,18 8,18 8,11 12,11 12,18 18,18 18,8" fill="currentColor" />
+					</svg> 
+					Sensible Security
+				</a>
+			
+		</em>
+		<button id="menu_button" role="switch" aria-checked="false" class="menu_button">
+			Menu
+		</button>
+		<nav id="main_nav" class="menu_list">
+  <ul>
+    
+    
+      <li>
+        
+          <a href="/intro/">
+        
+          
+            Introduction
+          
+        
+          </a>
+        
+        </li>
+    
+      <li>
+        
+          <a href="/im_different/">
+        
+          
+            This guide is different
+          
+        
+          </a>
+        
+        </li>
+    
+      <li>
+        
+          <a href="/security/">
+        
+          
+            What is security?
+          
+        
+          </a>
+        
+        </li>
+    
+      <li>
+        
+          <a href="/hackers/">
+        
+          
+            Will I even be hacked?
+          
+        
+          </a>
+        
+        </li>
+    
+      <li>
+        
+          <a href="/how_hacked/">
+        
+          
+            How can I be hacked?
+          
+        
+          </a>
+        
+        </li>
+    
+      <li>
+        
+          <a href="/coffee/">
+        
+          
+            Coffee shop wi-fi
+          
+        
+          </a>
+        
+        </li>
+    
+      <li>
+        
+          <a href="/conclusion/">
+        
+          
+            Conclusion
+          
+        
+          </a>
+        
+        </li>
+    
+      <li>
+        
+          <a href="/references/">
+        
+          
+            References
+          
+        
+          </a>
+        
+        </li>
+    
+  </ul>
+  <h2>Advice to take</h2>
+  <ul>
+    
+    
+      <li>
+        
+          <a href="/overall/">
+        
+          
+            How to stay safe
+          
+        
+          </a>
+        
+        </li>
+    
+      <li>
+        
+          <a href="/passwords/">
+        
+          
+            Passwords & TFA
+          
+        
+          </a>
+        
+        </li>
+    
+      <li>
+        
+          <a href="/antivirus/">
+        
+          
+            Anti-virus software
+          
+        
+          </a>
+        
+        </li>
+    
+      <li>
+        
+          <a href="/backups/">
+        
+          
+            Backups
+          
+        
+          </a>
+        
+        </li>
+    
+      <li>
+        
+          <a href="/vpn/">
+        
+          
+            VPNs
+          
+        
+          </a>
+        
+        </li>
+    
+  </ul>
+  <h2>Sidequests</h2>
+  <ul>
+    
+    
+    <li>
+      
+        <a href="/help/">
+      
+        
+          I'm under attack now
+        
+      
+        </a>
+      
+      </li>
+  
+    <li>
+      
+        <span class="current">
+      
+        
+          What is HTTPS?
+        
+      
+        </span>
+      
+      </li>
+  
+    <li>
+      
+        <a href="/better_passwords/">
+      
+        
+          Better passwords
+        
+      
+        </a>
+      
+      </li>
+  
+  </ul>
+</nav>
+	</div>
+</header>
+<article>
+	<h1>What is HTTPS?</h1>
+	<aside class="sidebar">
+		<ul class="no_bullets">
+			<li>
+				<strong>Reading time</strong>: 
+
+
+
+  11mins
+
+			</li>
+			
+				<li>
+					<strong>Published</strong>: Nov 24th, 2018
+				</li>
+			
+			<li>
+				<strong>Modified</strong>: Apr 24th, 2023
+			</li>
+		</ul>
+	</aside>
+	<p><strong>When you browse the Internet</strong>—you know, when you go to google.com to search for puppies—<strong>you are using HTTP</strong> (the HyperText Transport Protocol), or more likely, <strong>HTTPS</strong> (HTTP Secure). HTTPS prevents other people from eavesdropping on your puppy search. Or replacing those puppies with <em>less cute</em> ones, without you knowing.</p>
+
+<p>When you browse the Internet today, <strong>most of the stuff you see is already HTTPS</strong>—and you probably notice the “Not Secure” indicator when it’s not. Your banks and sensitive websites—and certainly your searches and social media—are all secure by default using HTTPS. Even your email is probably protected by a similar tool.</p>
+
+<p>HTTPS is what <strong>protects you against the scariest threats</strong> at a <a href="/coffee/">coffee shop</a>, and it’s why I feel safe browsing the web wherever I go.</p>
+
+<p>What does “secure” mean, and how does HTTPS work? Let’s dive in.</p>
+
+<h2 id="what-is-the-internet-and-why-does-it-need-security">What is the Internet, and why does it need security?</h2>
+
+<p>No matter how you slice it, the Internet is simply a way for computers to communicate electronically:</p>
+
+<ul>
+  <li>When you load a website (like Google), your computer is asking another computer for that website.</li>
+  <li>When you watch Netflix, you’re asking a computer somewhere to send you all 6 seasons of Community in one weekend.</li>
+  <li>When you send an email, your computer sends that email to Hotmail’s (or whomever’s) servers for your friend to read later.</li>
+</ul>
+
+<p>Each of these communication methods follows a standard set of rules—a protocol.  These protocols specify exactly how to package up your data to send it properly, just like you have to do with snail mail.</p>
+
+<p>Snail mail is pretty safe, and easy to protect. We send cash and checks in the mail all the time.</p>
+
+<p>At first, the Internet was pretty safe, too—because it was also tiny. The core protocols that defined the Internet—like HTTP, TCP/IP, DNS, and SMTP—made no effort to protect your data from snoops<!-- https://tools.ietf.org/html/rfc1945#section-12.4 -->.</p>
+
+<p>Specifically, these protocols only described how to send your data as plaintext—unencrypted, just like physical mail. All hackers needed to do to steal your passwords as you sent them to Google was eavesdrop, which is very easy to do: <strong>hence the warnings to avoid coffee shop wi-fi</strong>.</p>
+
+<p>This simple design, which helped the Internet spread quickly, but <strong>soon became a liability</strong>. Billions of people live their lives on the Internet, each one of them a goldmine of secrets for criminals (and even governments).</p>
+
+<aside class="sidenote">
+  <p>Tim Berners-Lee (designer of the Internet) <a href="https://www.theregister.co.uk/2014/10/08/sir_tim_bernerslee_defends_decision_not_to_bake_security_into_www/">at IP Expo</a>, about the decision to leave security out of the original design:</p>
+
+  <blockquote>
+    <p>[The web] might not have taken off if it had been too difficult.</p>
+  </blockquote>
+
+  <p>He was probably right.</p>
+</aside>
+
+<p>In response, security specialists drafted “secure” variants of most Internet standards. <!-- thanks in a large part to the US relaxing strict export laws about encryption CITATION NEEDED --></p>
+
+<h2 id="introducing-https">Introducing HTTPS</h2>
+
+<p>Importantly for us, these specialists included <strong>a secure version of HTTP</strong>, <strong>HTTPS</strong> (“HTTP Secure”).</p>
+
+<p>HTTPS protects traffic on the Internet by sending it as <strong>cyphertext</strong>: encrypted. If everything works right, only you and your destination can read the contents.</p>
+
+<p>With HTTPS, we now had the <em>ability</em> to keep your content secure as it traveled the Internet.</p>
+
+<p>For a long time, though, HTTPS languished, and most Internet communication remained insecure. But recently, thanks to initiatives by Google, Let’s Encrypt, the EFF, and many others, encrypted Internet traffic in the United States nearly <em>doubled</em> between 2015 and 2018. That number <a href="https://scotthelme.co.uk/alexa-top-1-million-analysis-august-2018/">keeps going up</a><!-- TODO CITE -->, and it’s the reason you can browse open wireless networks in relative peace.</p>
+
+<p>In fact, when I first wrote this article, only about 60% of Internet traffic was encrypted. <strong>Today, <a href="https://transparencyreport.google.com/https/overview?hl=en">over 90%</a> is</strong>.
+<!-- Mozilla calls all of this work "[deprecating the insecure Internet](https://blog.mozilla.org/security/2015/04/30/deprecating-non-secure-http/)," and because of it, --></p>
+
+<h2 id="the-old-internet--before-https">The old Internet – before HTTPS</h2>
+
+<p>HTTPS makes your web browsing much safer because it protects against the <strong>easiest and most dangerous direct attack possible on the Internet</strong>: the man-in-the-middle attack.</p>
+
+<aside class="sidenote">
+  <p>There is no direct citation for this statement. However, the vulnerabilities listed in essays (explaining the need for HTTPS) from Google <a class="citation" href="/references/#basques">(Basques, n.d.)</a>, the government <a class="citation" href="/references/#mill_2014">(Mill, 2014)</a>, and <em>the agency that created the Internet</em> <a class="citation" href="/references/#farrell2014pervasive">(Farrell &amp; Tschofenig, 2014; “Securing the Web,” 2015)</a> are all man-in-the-middle attacks.</p>
+</aside>
+
+<p>A man-in-the-middle attack in general is any attack where someone intercepts your communication before it reaches its destination. The most straightforward practical example is someone at the post office reading all your mail.</p>
+
+<p>In the case of the Internet, an attacker reads the data your computer sends to and receives from a wi-fi router, or a more powerful attacker (like a government) reads data going across a larger router located deeper in the Internet.</p>
+
+<p>The man-in-the-middle attack is so dangerous on the Internet because:</p>
+
+<ul>
+  <li>it can be completely silent,</li>
+  <li>it compromises <strong>everything</strong> you send and receive while browsing, and</li>
+  <li>it is cakework to implement.</li>
+</ul>
+
+<h2 id="how-easy-it-once-was">How easy it once was</h2>
+
+<p>A well-publicized example of just how easy this attack was comes from a free plugin for Firefox called <a href="https://codebutler.com/2010/10/24/firesheep/">Firesheep</a>.</p>
+
+<p>In 2010, Eric Butler released Firesheep as a demonstration. This plugin made impersonating Facebook accounts as easy as “double-click[ing] on someone” <a class="citation" href="/references/#firesheep">(Butler, 2010)</a>. He did this to motivate websites to switch to HTTPS. As Butler implored in 2010:</p>
+
+<blockquote>
+  <p>The only effective fix for this problem is full end-to-end encryption, known on the web as HTTPS or SSL.</p>
+</blockquote>
+
+<p>Firesheep can’t hack Facebook anymore because Facebook switched to HTTPS by default in 2013.</p>
+
+<p>It took them 3 years.</p>
+
+<h2 id="the-secure-internet--with-https">The secure Internet – with HTTPS</h2>
+
+<p>HTTPS makes the man-in-the-middle attack almost impossible, except for in a few edge cases. It is the reason I can feel safe reading Facebook (and even accessing my bank) on public Wi-Fi—in a specific set of circumstances.</p>
+
+<p>Using HTTPS is a bit like <strong>sending coded messages through the mail</strong>: how secure you are depends on how secure your encryption is, how trustworthy the recipient is, and how sensitive the information on the envelope is, among other things.</p>
+
+<aside class="sidenote">
+  <p>The information on the “envelope”—the <strong>metadata</strong>—has specific privacy and security implications <a class="citation" href="/references/#muehlstein2016analyzing">(Muehlstein et al., 2016, nn. 7–46)</a>, but most of them are highly specific.</p>
+
+  <p>For example, an attacker can tell if you’re using Skype, or that you are going to Planned Parenthood’s website (but they cannot know who you talked to or which specific pages you load).</p>
+
+  <p>This is discussed in greater depth later. See also <a href="/vpn/"><strong>Do you need a VPN?</strong></a>.</p>
+</aside>
+
+<p>But HTTPS does not secure every part of your Internet browsing, and you must double check it to make sure no one is attacking you.</p>
+
+<p>The best way to keep yourself secure is to learn how HTTPS works.</p>
+
+<h2 id="how-https-works">How HTTPS works</h2>
+
+<p>HTTPS relies on “public key encryption.” Public key encryption is a form of encryption that relies on a pair of numbers—or “keys”:</p>
+
+<ul>
+  <li>a publicly available key (a “public key”) and</li>
+  <li>a corresponding private key.</li>
+</ul>
+
+<p>These keys can be used to generate messages that only the other key can unscramble (using <em>math</em>!). If you encrypt a message with a public key, only someone with the private key can decrypt it, and if you encrypt a message with a private key, anyone with the corresponding public key can be sure you wrote it.</p>
+
+<p>Servers distribute specially-formatted public keys—called “certificates”—and your browser encrypts its initial message to the server using that public key. Because only the server has the right private key, you can be sure no one else reads your message. Your browser and the server then negotiate new keys, private to each of you<!-- TODO verify -->, for the rest of the connection.</p>
+
+<p>Encrypting your communication with these keys stops man-in-the-middle attacks cold. As long as the encryption you use is strong enough, eavesdroppers just see gibberish passing between you and webkinz.com.</p>
+
+<aside class="sidenote">
+  <p>Note that eavesdroppers <strong>do</strong> know which website you’re talking to: the metadata leaks <a href="https://stackoverflow.com/q/8277323">the base part of the URL</a> (and only that part). Eavesdroppers can also see that you <strong>are</strong> talking to a site and can analyze the message size—think about telling apart college acceptance letters vs college rejection letters by size.</p>
+
+  <p>Again, there are practical attacks <a class="citation" href="/references/#muehlstein2016analyzing">(Muehlstein et al., 2016, nn. 7–46)</a>, but many are very specific. See also <a href="/vpn/"><strong>Do you need a VPN?</strong></a> for more in-depth discussion of metadata.</p>
+</aside>
+
+<p>However, what if an attacker pretends to be the server, giving you a false certificate? They can pretend to be webkinz.com, intercept your messages, and then send them to the real webkinz.com. Your traffic may be encrypted, but it’s still man-in-the-middled!</p>
+
+<p>That’s why on the Internet, although the certificates may be <em>public</em>, they also carry a proof of identity: a “signature” from a Certificate Authority.</p>
+
+<p>There are dozens of Certificate Authorities, and each does the same thing: if you can prove you own a site, the authority will “sign” your certificate to say “this certificate is from the owner of miniclip.com.” Like an HTTPS certificate itself, this signature is also a form of public key cryptography. The authority generates a signature using another private key, and they distribute its corresponding public key to browsers. Most browsers maintain their own careful list of trusted Authorities, <a href="https://letsencrypt.org/2018/08/06/trusted-by-all-major-root-programs.html">adding new ones</a> or <a href="https://security.googleblog.com/2018/03/distrust-of-symantec-pki-immediate.html">removing corrupt ones</a> from time to time.</p>
+
+<h2 id="you-need-two-things-to-be-secure">You need two things to be secure</h2>
+
+<p>With server certificates and Certificate Authorities, you know that all your traffic to msn.com is going to msn.com and no one else. Trusting that you’re on the right site becomes as simple as verifying two things:</p>
+
+<ol>
+  <li>The HTTPS encryption is done correctly, using a strong algorithm with no weaknesses, and</li>
+  <li>The Certificate Authorities you trust are not corrupt.</li>
+</ol>
+
+<h2 id="how-your-browser-helps-you-with-https">How your browser helps you with HTTPS</h2>
+
+<p>Your browser helps you verify those two things.</p>
+
+<p>You may have noticed the green lock and green “secure” or seen the <code class="language-plaintext highlighter-rouge">https://</code> in your URL on some sites. This is your browser helping you; <strong>it is the only authoritative indicator that HTTPS is working</strong> and your connection is secure. Nothing else—not a badge or a written assurance of “military-grade security” on the webpage, not the word “secure” in the URL—can prove your connection is secure.</p>
+
+<aside class="sidenote">
+  <p>As of 2018, browsers are slowly changing their indicators. Look up the most current ones for <a href="https://support.google.com/chrome/?p=ui_security_indicator">Google Chrome</a>, <a href="https://support.mozilla.org/en-US/kb/control-center-site-privacy-and-security-firefox">Firefox</a>, <a href="https://support.microsoft.com/en-us/help/4027268/windows-how-to-know-whether-to-trust-a-website-in-microsoft-edge">Microsoft Edge</a>, and <a href="https://support.apple.com/guide/safari/avoid-fraud-by-using-encrypted-websites-sfri40697/mac">Safari</a>.</p>
+</aside>
+
+<p>As mentioned above, browsers also maintain lists of trusted Authorities. If you use an auto-updating browser, you can be pretty confident that the list is good.</p>
+
+<aside class="sidenote">
+  <p>Unfortunately, this list is HTTPS’ biggest weakness. Some non-American governments run their own Authorities, so if you’re concerned they might try to man-in-the-middle you, you must take other precautions.</p>
+</aside>
+
+<p>To understand how your browser gives you information about security, see my video “<a href="https://youtu.be/RNzw8tVhOpY">Understanding HTTPS in your browser</a>.”</p>
+
+<h2 id="theres-more-to-security-than-https">There’s more to security than HTTPS</h2>
+
+<p>This padlock secures your data as it crosses the Internet. It does not guarantee anything else:</p>
+
+<ul>
+  <li>Not that your computer is up-to-date and virus free;</li>
+  <li>Not that the website will store your password safely in its database;</li>
+  <li>Not that the site you’re talking to is actually the one you want to talk to.</li>
+</ul>
+
+<p>For example, HTTPS guarantees that when you talk to Snapple.com you are actually talking to Snapple.com. It doesn’t say you should give your <em>Apple</em> logins to them.</p>
+
+<p>HTTPS does not indicate any security <em>except</em> that your communication was secure in transit, but that’s a very important thing; the rest you can verify separately.</p>
+
+<h2 id="the-rest-of-the-steps">The rest of the steps</h2>
+
+<p>After you’ve secured the part of your communication that crosses the Internet, you must secure your devices and your destination.</p>
+
+<p>I believe that security literature focuses on man-in-the-middle attacks because they’re so easy without encryption: they leave little trace, can be performed without direct contact (especially if you’re a government), and are extremely powerful.</p>
+
+<aside class="sidenote">
+  <p>… and they’re interesting to study!</p>
+</aside>
+
+<p>Once man-in-the-middle attacks are mitigated, you need to minimize your other security holes before you can browse safely.</p>
+
+<p>That we cover in <a href="/overall/">How to stay safe</a>.</p>
+
+	<nav class="page_nav">
+		
+		 
+		 
+		 
+		 
+	</nav>
+	<aside class="alert info">
+		<strong>Loved this? Hated it?</strong> Leave feedback with this <a href="https://docs.google.com/forms/d/e/1FAIpQLScrx6IoWIdZ3UzqNVpsrQRdiyXhTgQ6yeXGOf5MQE-SLNzZlw/viewform?usp=sf_link">4 question survey</a>
+	</aside>
+</article>
+<footer>
+  <div class="content">
+    <section>
+      <h2>Warning</h2>
+      <p>This content is targeted at most Internet users—to access your bank, online shopping, and Facebook.</p>
+      <p>If you fear censorship or your life may be at risk if you are hacked, it is reasonable to take other precautions.</p>
+      <p class="legalese">
+        Also, this content is provided “as is”, without warranty of any kind,
+        express or implied, including but not limited to the warranties of
+        merchantability, fitness for a particular purpose and noninfringement.
+        In no event shall the authors or copyright holders be liable for any
+        claim, damages or other liability, whether in an action of contract,
+        tort or otherwise, arising from, out of or in connection with this
+        content or the use or other dealings in this content.
+      </p>
+    </section>
+    <section>
+      <h2>Content</h2>
+      <p>This site is by <a href="https://ben.stolovitz.com/">Ben Stolovitz</a>. Its content is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>. Its code is licensed under <a href="https://choosealicense.com/licenses/agpl-3.0/">GNU AGPLv3</a>.</p>
+      <p>Built code is available <a href="https://github.com/citelao/sensible-security-drop">on GitHub</a>.</p>
+    </section>
+  </div>
+</footer>
+
+    <script async src="/js/main.js"></script>
+  </body>
+</html>
