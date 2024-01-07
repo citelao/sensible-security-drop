@@ -22,7 +22,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:400,400i,700,700i" rel="stylesheet">
     
-    <link rel="stylesheet" href="/css/style.css?1684292998166623000">
+    <link rel="stylesheet" href="/css/style.css?1704669614908776000">
 
     
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -48,7 +48,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Passwords &amp; two-factor authentication" />
 <script type="application/ld+json">
-{"headline":"Passwords &amp; two-factor authentication","dateModified":"2023-04-25T01:26:35-04:00","datePublished":"2023-04-24T08:00:00-04:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://security.stolovitz.com/passwords/"},"url":"https://security.stolovitz.com/passwords/","author":{"@type":"Person","name":"Ben Stolovitz"},"@type":"BlogPosting","description":"Passwords don’t really matter. Two-factor authentication is much more important, and here’s why—with concrete evidence.","@context":"https://schema.org"}</script>
+{"headline":"Passwords &amp; two-factor authentication","dateModified":"2024-01-07T17:55:26-05:00","datePublished":"2023-04-24T08:00:00-04:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://security.stolovitz.com/passwords/"},"url":"https://security.stolovitz.com/passwords/","author":{"@type":"Person","name":"Ben Stolovitz"},"@type":"BlogPosting","description":"Passwords don’t really matter. Two-factor authentication is much more important, and here’s why—with concrete evidence.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   </head>
@@ -303,7 +303,7 @@
 				</li>
 			
 			<li>
-				<strong>Modified</strong>: Apr 25th, 2023
+				<strong>Modified</strong>: Jan 7th, 2024
 			</li>
 		</ul>
 	</aside>
@@ -322,15 +322,14 @@
 <p>Passwords are supposed to be hard to guess. That’s what makes them useful: an attacker needs to waste time guessing your password.</p>
 
 <aside class="sidenote">
-  <p>That’s what password complexity requirements try to do: make passwords harder to guess. Too bad some end up making them easier to guess<!-- NIST passwords guideline -->.</p>
+  <p>That’s what password complexity requirements try to do: make passwords harder to guess. Too bad some end up making them easier to guess⁠<span tabindex="0" class="citeblock"><a class="citation" href="/references/#grassi2017nist">(Grassi et al., 2017, Appendix A.3 Complexity)</a></span>⁠.</p>
 </aside>
 
 <p>However, in practice hackers don’t need to guess anything at all.</p>
 
-<p>As one example, the Internet is teeming with breached usernames &amp; passwords, stolen from companies’ databases worldwide<!-- HaveIBeenPwned -->. Most attacks (over 20 million <em>daily</em> on Microsoft accounts alone, according to a director on the Microsoft Identity team<!-- Your Pa$$word doesn't matter -->) are just hackers trying these username &amp; password pairs on other sites, hoping that you reused your password.</p>
+<p>As one example, the Internet is teeming with breached usernames &amp; passwords, stolen from companies’ databases worldwide⁠<span tabindex="0" class="citeblock"><a class="citation" href="/references/#troy_hunt_have_nodate">(Troy Hunt, n.d.)</a></span>⁠. Most attacks (over 20 million <em>daily</em> on Microsoft accounts alone, according to a director on the Microsoft Identity team⁠<span tabindex="0" class="citeblock"><a class="citation" href="/references/#weinert_your_2019">(Weinert, 2019)</a></span>⁠) are just hackers trying these username &amp; password pairs on other sites, hoping that you reused your password.</p>
 
-<p>And they work<!-- Previous article: 62%; 2010 NCSA / Norton by Symantec Online Safety Study says 37% +/- 5% unsure; . The Tangled Web of Password Reuse via The Password Life Cycle:
-User Behaviour in Managing Passwords says 43% of passwords in a dataset were reused -->.</p>
+<p>And they’d be right⁠<span tabindex="0" class="citeblock"><a class="citation" href="/references/#national_cyber_security_alliance_2010_2010">(National Cyber Security Alliance et al., 2010, p. 2; Stobert &amp; Biddle, 2014, p. 244; Weinert, 2019)</a></span>⁠<!-- Previous article: 62% by LastPass by LogMeIn; 2010 NCSA / Norton by Symantec Online Safety Study says 37% +/- 5% unsure; . The Tangled Web of Password Reuse via The Password Life Cycle: User Behaviour in Managing Passwords says 43% of passwords in a dataset were reused -->.</p>
 
 <p>In these attacks, it doesn’t matter how strong your password was: whether you used <code class="language-plaintext highlighter-rouge">Password1!</code> or <code class="language-plaintext highlighter-rouge">8zUM94oureVvjsBrsUCJYHxNWcG6</code>, the hacker already knows your old password and is trying it in new places.</p>
 
@@ -344,17 +343,15 @@ User Behaviour in Managing Passwords says 43% of passwords in a dataset were reu
 
 <p>Hackers attempting this—at least against large companies like Microsoft, Facebook, Google, Apple, and even your local bank—can only test a few dozen passwords per account per day at most. If your password is reasonably good and isn’t in the top most common passwords, you’re essentially immune.</p>
 
-<p>This doesn’t cover all attacks on passwords, but looking at more “overall” data paints the same picture<!-- An Administrator's Guide to Internet Password Research; Your Pa$$word doesn't matter; -->. Most attacks just don’t care about password strength so long as it’s “good enough.”</p>
+<p>This doesn’t cover all attacks on passwords, but looking at more “overall” data paints the same picture⁠<span tabindex="0" class="citeblock"><a class="citation" href="/references/#florencio_administrators_2014">(Florencio et al., 2014; Weinert, 2019)</a></span>⁠. Most attacks just don’t care about password strength so long as it’s “good enough.”</p>
 
 <h2 id="but-what-if-they-want-to-guess-me">But what if they want to guess me?</h2>
 
-<p><em>Even</em> if hackers have stolen the database (and it was encrypted right in the first place; otherwise they basically have your password anyway and your password strength didn’t matter), it is infeasible to crack passwords at scale if your password is good enough<!-- Your Pa$$word doesn't matter; -->.</p>
+<p><em>Even</em> if hackers have stolen the database (and it was encrypted right in the first place; otherwise they basically have your password anyway and your password strength didn’t matter), it is infeasible to crack passwords at scale if your password is good enough⁠<span tabindex="0" class="citeblock"><a class="citation" href="/references/#weinert_your_2019">(Weinert, 2019)</a></span>⁠.</p>
 
 <p>That being said, if a hacker wants to target <em>you</em> specifically, they can crack almost any password given enough time and motivation.</p>
 
 <p>That is the <em>one</em> situation where you really want a <em>good</em> password, not just a “good enough” password. And if you are being targeted like that, <a href="/help/">you should probably contact the police</a>.</p>
-
-<!-- Is Everything We Know About Password-Stealing Wrong? -->
 
 <h2 id="stop-everything-else">Stop everything else</h2>
 
@@ -371,19 +368,25 @@ User Behaviour in Managing Passwords says 43% of passwords in a dataset were reu
 
 <p>I find it calming to turn on two-factor authentication for as many accounts as I can, but these are the most important (how much harm can a hacker do with your Netflix account?).</p>
 
-<p>There are downsides and nuances to two-factor authentication (some folks argue that you should <em>never</em> use SMS-based two-factor<!-- TODO cite -->), but those are asides that change with the times.</p>
+<p>There are downsides and nuances to two-factor authentication (some folks argue that you should <em>never</em> use SMS-based two-factor⁠<span tabindex="0" class="citeblock"><a class="citation" href="/references/#neil_c_hughes_why_2021">(Neil C. Hughes, 2021)</a></span>⁠), but those are asides that change with the times.</p>
 
-<p>No matter what method you use, two-factor authentication will protect you from most attacks.</p>
+<p>No matter what method you use, two-factor authentication will protect you from most attacks⁠<span tabindex="0" class="citeblock"><a class="citation" href="/references/#weinert_all_2019">(Weinert, 2019; Weinert, 2019)</a></span>⁠.</p>
 
 <p>You should still put a little effort into choosing <a href="/better_passwords/">reasonably good</a> passwords, but two-factor authentication does a <em>ton</em> to keep you safe.</p>
 
-<p>At the end of the day<!-- Your Pa$$word doesn't matter; -->:</p>
+<p>At the end of the day:</p>
 
 <blockquote>
-  <p>Based on our studies, your account is more than 99.9% less likely to be compromised if you use MFA.</p>
+  <p>Based on our studies, your account is more than 99.9% less likely to be compromised if you use MFA.⁠<span tabindex="0" class="citeblock"><a class="citation" href="/references/#weinert_your_2019">(Weinert, 2019)</a></span>⁠</p>
 </blockquote>
 
-<!-- Existing Evidence for the Effectiveness of Passwords in Preventing Cyber Crime Incidents -->
+<!--
+See also:
+
+* Existing Evidence for the Effectiveness of Passwords in Preventing Cyber Crime Incidents
+* Is Everything We Know About Password-Stealing Wrong?
+
+-->
 
 	<nav class="page_nav">
 		
